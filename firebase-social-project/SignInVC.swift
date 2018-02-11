@@ -7,19 +7,35 @@
 //
 
 import UIKit
+import Firebase
+//import FacebookLogin
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var pwdField: UITextField!
+    
+    var name = "Martha"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func signInTapped(_ sender: Any) {
+    }
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let transferName = name
+        
+        let destinationVC = segue.destination as? nextVC
+        destinationVC?.name = transferName
+        
+        
+    }
 }
-

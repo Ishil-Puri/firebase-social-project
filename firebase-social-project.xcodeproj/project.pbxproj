@@ -13,7 +13,14 @@
 		FC16C0671F24738A002C896E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC16C0651F24738A002C896E /* Main.storyboard */; };
 		FC16C0691F24738A002C896E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC16C0681F24738A002C896E /* Assets.xcassets */; };
 		FC16C06C1F24738A002C896E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC16C06A1F24738A002C896E /* LaunchScreen.storyboard */; };
+		FCB516571F28D4ED00DA20FC /* nextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB516561F28D4ED00DA20FC /* nextVC.swift */; };
+		FCB516591F28D58100DA20FC /* finalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB516581F28D58100DA20FC /* finalVC.swift */; };
 		FCD5506D1F248A1500F5D8D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCD5506C1F248A1500F5D8D4 /* GoogleService-Info.plist */; };
+		FCD550731F25595700F5D8D4 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD550721F25595700F5D8D4 /* FancyView.swift */; };
+		FCD550761F255AAA00F5D8D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD550751F255AAA00F5D8D4 /* Constants.swift */; };
+		FCEF8B102030F67D00CE21F3 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEF8B0F2030F67D00CE21F3 /* RoundBtn.swift */; };
+		FCEF8B122030F80000CE21F3 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEF8B112030F80000CE21F3 /* FancyField.swift */; };
+		FCEF8B142030F90200CE21F3 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEF8B132030F90200CE21F3 /* FancyBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +34,15 @@
 		FC16C0681F24738A002C896E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC16C06B1F24738A002C896E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC16C06D1F24738A002C896E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB516561F28D4ED00DA20FC /* nextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nextVC.swift; sourceTree = "<group>"; };
+		FCB516581F28D58100DA20FC /* finalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finalVC.swift; sourceTree = "<group>"; };
 		FCD5506C1F248A1500F5D8D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCD550711F2542CF00F5D8D4 /* firebase-social-project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "firebase-social-project.entitlements"; sourceTree = "<group>"; };
+		FCD550721F25595700F5D8D4 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		FCD550751F255AAA00F5D8D4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FCEF8B0F2030F67D00CE21F3 /* RoundBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		FCEF8B112030F80000CE21F3 /* FancyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		FCEF8B132030F90200CE21F3 /* FancyBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		FC16C0601F24738A002C896E /* firebase-social-project */ = {
 			isa = PBXGroup;
 			children = (
+				FCD550741F255A8D00F5D8D4 /* Util */,
 				FCD550711F2542CF00F5D8D4 /* firebase-social-project.entitlements */,
 				FCD550701F248C9200F5D8D4 /* Controller */,
 				FCD5506F1F248C8700F5D8D4 /* View */,
@@ -105,6 +120,10 @@
 		FCD5506F1F248C8700F5D8D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FCD550721F25595700F5D8D4 /* FancyView.swift */,
+				FCEF8B0F2030F67D00CE21F3 /* RoundBtn.swift */,
+				FCEF8B112030F80000CE21F3 /* FancyField.swift */,
+				FCEF8B132030F90200CE21F3 /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -113,8 +132,18 @@
 			isa = PBXGroup;
 			children = (
 				FC16C0631F24738A002C896E /* SignInVC.swift */,
+				FCB516561F28D4ED00DA20FC /* nextVC.swift */,
+				FCB516581F28D58100DA20FC /* finalVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		FCD550741F255A8D00F5D8D4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FCD550751F255AAA00F5D8D4 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +181,7 @@
 				TargetAttributes = {
 					FC16C05D1F24738A002C896E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = J4YCU3YPM5;
+						DevelopmentTeam = N4YYYHBZX5;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -247,8 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEF8B122030F80000CE21F3 /* FancyField.swift in Sources */,
 				FC16C0641F24738A002C896E /* SignInVC.swift in Sources */,
+				FCEF8B102030F67D00CE21F3 /* RoundBtn.swift in Sources */,
 				FC16C0621F24738A002C896E /* AppDelegate.swift in Sources */,
+				FCD550731F25595700F5D8D4 /* FancyView.swift in Sources */,
+				FCB516591F28D58100DA20FC /* finalVC.swift in Sources */,
+				FCEF8B142030F90200CE21F3 /* FancyBtn.swift in Sources */,
+				FCB516571F28D4ED00DA20FC /* nextVC.swift in Sources */,
+				FCD550761F255AAA00F5D8D4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "firebase-social-project/firebase-social-project.entitlements";
-				DEVELOPMENT_TEAM = J4YCU3YPM5;
+				DEVELOPMENT_TEAM = N4YYYHBZX5;
 				INFOPLIST_FILE = "firebase-social-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Puri-Inc.firebase-social-project";
@@ -390,7 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "firebase-social-project/firebase-social-project.entitlements";
-				DEVELOPMENT_TEAM = J4YCU3YPM5;
+				DEVELOPMENT_TEAM = N4YYYHBZX5;
 				INFOPLIST_FILE = "firebase-social-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Puri-Inc.firebase-social-project";
